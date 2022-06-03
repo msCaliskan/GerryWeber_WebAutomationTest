@@ -101,7 +101,7 @@ public class AccountPage extends BasePage{
 
         for (int i = 1; i <= allCity.size(); i++) {
             if (allCity.get(i).getText().contains("İstanbul")){
-                allCity.get(i).click();
+                BrowserUtils.clickWithJS(allCity.get(i));
                 break;
             }
         }
@@ -115,7 +115,7 @@ public class AccountPage extends BasePage{
 
         for (int i = 1; i <= allCounty.size(); i++) {
             if (allCounty.get(i).getText().contains("BESIKTAS")){
-                allCounty.get(i).click();
+                BrowserUtils.clickWithJS(allCounty.get(i));
                 break;
             }
         }
