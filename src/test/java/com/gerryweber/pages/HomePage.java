@@ -24,7 +24,7 @@ public class HomePage extends BasePage{
         BrowserUtils.waitFor(2);
 
         JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
-        WebElement accept = (WebElement) jse.executeScript("return document.querySelector('#usercentrics-root').shadowRoot.querySelector('#focus-lock-id > div.sc-furwcr.kbclTA > div > div.sc-ikJyIC.jegfVy > div > div > div.sc-dlVxhl.bEDIID > div > button:nth-child(5)')");
+        WebElement accept = (WebElement) jse.executeScript("return document.querySelector('#usercentrics-root').shadowRoot.querySelector('#focus-lock-id > div.sc-furwcr.kbclTA > div > div.sc-bYoBSM.egarKh > div > div > div.sc-dlVxhl.bEDIID > div > button:nth-child(3)')");
 
        BrowserUtils.clickWithJS(accept);
        BrowserUtils.waitFor(1);

@@ -20,9 +20,7 @@ public class CheckoutPage extends BasePage{
 
     @FindBy(xpath = "//*[@id='cvc']") public WebElement cvc_Loc;
 
-    @FindBy(css = "#isConsentTextConfirmed") public WebElement mesafeliSatis_Loc;
-
-    @FindBy(css = "#isDataPolicyConfirmed") public WebElement onBilgilendirme_Loc;
+    @FindBy(css = "#isPolicyConfirmed") public WebElement mesafeliSatis_Loc;
 
     @FindBy(css = "#miniCart") public WebElement cartButton_Loc;
 
@@ -61,7 +59,6 @@ public class CheckoutPage extends BasePage{
         BrowserUtils.waitFor(2);
     }
     public void checkBox(){
-        onBilgilendirme_Loc.click();
         mesafeliSatis_Loc.click();
         BrowserUtils.waitFor(1);
     }

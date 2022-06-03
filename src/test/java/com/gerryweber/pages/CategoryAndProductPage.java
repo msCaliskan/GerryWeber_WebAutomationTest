@@ -39,10 +39,9 @@ public class CategoryAndProductPage extends BasePage {
     public void selectSize(){
 
         Random rn = new Random();
-        int a = rn.nextInt(sizeList_Loc.size())+1;
-        String loc = "(//button[contains(@class, 'MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root has-stock')])["+a+"]";
+        int a = rn.nextInt(sizeList_Loc.size());
 
-        Driver.get().findElement(By.xpath(loc)).click();
+        sizeList_Loc.get(a).click();
     }
 
     public void searchResult(String string){
