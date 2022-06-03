@@ -85,8 +85,8 @@ public class StepDefinitions {
         new CheckoutPage().invalidCard();
     }
 
-    @When("The user selects Ön Bilgilendirme and Mesafeli Satış Sözleşmesi buttons")
-    public void the_user_selects_Ön_Bilgilendirme_and_Mesafeli_Satış_Sözleşmesi_buttons() {
+    @When("The user selects On Bilgilendirme and Mesafeli Satis Sozlesmesi buttons")
+    public void the_user_selects_On_Bilgilendirme_and_Mesafeli_Satis_Sozlesmesi_buttons() {
         new CheckoutPage().checkBox();
     }
 
