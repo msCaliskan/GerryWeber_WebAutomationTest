@@ -19,5 +19,3 @@ Feature: Desktop | The user adds new address and delete
     And The user verifies "Kayıtlı adresiniz bulunmamaktadır." message
     And The user clicks "Çıkış Yap" button
     And The user verifies redirected to "/tr-TR" page
-
-
