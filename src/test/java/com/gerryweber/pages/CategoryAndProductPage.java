@@ -27,7 +27,6 @@ public class CategoryAndProductPage extends BasePage {
 
     @FindBy(xpath = "//*[@name='price']") public WebElement priceHolder_Loc;
 
-
     public void clickProductRandom(){
 
         Random rn = new Random();
