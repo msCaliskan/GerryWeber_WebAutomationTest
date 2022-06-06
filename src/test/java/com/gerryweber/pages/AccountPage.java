@@ -44,6 +44,10 @@ public class AccountPage extends BasePage{
 
     @FindBy(css = "#streetAddress") public WebElement adres_Loc;
 
+    @FindBy(xpath = "//*[@class='MuiBox-root muirtl-1qm1lh']") public WebElement urun_Loc;
+
+    @FindBy(xpath = "//*[text()='Listeden Çıkar']") public WebElement removeBtn_Loc;
+
     public void getInformation(String name, String lastname, String email, String phone){
         String actName = ad_Loc.getAttribute("value");
         String actlastName = soyad_Loc.getAttribute("value");
@@ -166,6 +170,12 @@ public class AccountPage extends BasePage{
         }
         adres_Loc.sendKeys("Levent, HAN Spaces, Nispetiye Cd No:24");
 
+    }
+    public void removeProduct(){
+        BrowserUtils.hover(urun_Loc);
+        BrowserUtils.waitFor(2);
+        removeBtn_Loc.click();
+        BrowserUtils.waitFor(1);
     }
 
 }

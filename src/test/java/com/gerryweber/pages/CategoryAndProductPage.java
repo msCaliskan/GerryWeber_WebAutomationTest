@@ -3,6 +3,7 @@ package com.gerryweber.pages;
 import com.gerryweber.utilities.BrowserUtils;
 import com.gerryweber.utilities.Driver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -21,6 +22,12 @@ public class CategoryAndProductPage extends BasePage {
     @FindBy(xpath = "(//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium muirtl-1x0t2pd'])[2]") public WebElement uyari_Loc;
 
     @FindBy(css = ".MuiBox-root.muirtl-4smjhm") public WebElement product_Loc;
+
+    @FindBy(xpath = "//*[@class='MuiTypography-root MuiTypography-body4 muirtl-1ode37a']") public WebElement price_Loc;
+
+    @FindBy(xpath = "//*[@name='price']") public WebElement priceHolder_Loc;
+
+
     public void clickProductRandom(){
 
         Random rn = new Random();
@@ -67,4 +74,22 @@ public class CategoryAndProductPage extends BasePage {
         BrowserUtils.hover(product_Loc);
         BrowserUtils.waitFor(2);
     }
+    public void validPrice(){
+        String price = price_Loc.getText();
+        String a = price.substring(0, price.length()-6);
+
+        if(a.contains(".")){
+            a = a.replace(".","");
+        }
+        int b = Integer.parseInt(a);
+        int c= b-5;
+
+        priceHolder_Loc.sendKeys(Keys.CONTROL+"a");
+        priceHolder_Loc.sendKeys(Keys.DELETE);
+        BrowserUtils.waitFor(1);
+        priceHolder_Loc.sendKeys(Integer.toString(c));
+        BrowserUtils.waitFor(2);
+
+    }
+
 }

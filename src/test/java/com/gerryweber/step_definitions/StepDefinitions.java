@@ -143,4 +143,14 @@ public class StepDefinitions {
     public void theUserEntersDifferentPasswords() {
         new AccountPage().differentPassword();
     }
+
+    @And("The user enters valid price")
+    public void theUserEntersValidPrice() {
+        new CategoryAndProductPage().validPrice();
+    }
+    @And("The user remove product")
+    public void theUserRemoveProduct() {
+        new AccountPage().removeProduct();
+    }
+
 }
