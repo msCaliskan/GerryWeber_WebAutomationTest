@@ -93,6 +93,7 @@ public class StepDefinitions {
     @Then("The user clicks Back button")
     public void the_user_clicks_Back_button() {
         Driver.get().navigate().back();
+        BrowserUtils.waitFor(2);
     }
 
     @Then("The user enters forget password email address")
