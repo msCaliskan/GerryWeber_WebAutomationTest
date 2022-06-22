@@ -42,7 +42,7 @@ public class HomePage extends BasePage{
     }
 
     public static void checkHomePage(){
-        String expectedUrl ="https://www.gerryweber.com.tr/";
+        String expectedUrl ="https://www.gerryweber.com.tr/tr-TR";
         String actualUrl = Driver.get().getCurrentUrl();
         Assert.assertEquals(expectedUrl,actualUrl);
     }

@@ -4,5 +4,5 @@ Feature: Desktop | Filter feature
 
     Given The user visits GerryWeber homepage
     And The user verifies redirected to homepage
-    And The user navigates to "Giyim" "Business Elbiseler" category
-    When The user verifies redirected to "/giyim-elbiseler-business-elbiseler" page
+    And The user navigates to "GİYİM" "Business Elbiseler" category
+    When The user verifies redirected to "/tr-TR/giyim-elbiseler-business-elbiseler" page

@@ -10,7 +10,7 @@ Feature: Desktop | The user adds new address and delete
     And The user clicks "Giriş Yap" buttonn
     And The user clicks "Hesabım" button
     Then The user clicks "Adreslerim" button
-    And The user verifies redirected to "/account/addresses" page
+    And The user verifies redirected to "/tr-TR/account/addresses" page
     And The user verifies "Kayıtlı adresiniz bulunmamaktadır." message
     When The user clicks "Yeni Adres Ekle" button
     And The user enters valid informations

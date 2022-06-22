@@ -7,8 +7,8 @@ Feature: Desktop | Price Alert
     And The user clicks "Giriş Yap" button
     When The user enters valid credentials
     And The user clicks "Giriş Yap" buttonn
-    And The user navigates to "Giyim" "Business Elbiseler" category
-    When The user verifies redirected to "/giyim-elbiseler-business-elbiseler" page
+    And The user navigates to "GİYİM" "Business Elbiseler" category
+    When The user verifies redirected to "/tr-TR/giyim-elbiseler-business-elbiseler" page
     And The user clicks anyone product
     Then The user clicks "Fiyatı Düşünce Haber Ver" button
     And The user enters valid price
@@ -17,7 +17,7 @@ Feature: Desktop | Price Alert
     And The user closes popUps
     And The user clicks "Hesabım" button
     Then The user clicks "Fiyat Alarmı" button
-    And The user verifies redirected to "/account/price-subscription" page
+    And The user verifies redirected to "/tr-TR/account/price-subscription" page
     And The user remove product
     And The user verifies "Fiyat alarmınız bulunmamaktadır." message
     Then The user clicks "Çıkış Yap" button

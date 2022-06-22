@@ -10,7 +10,7 @@ Feature: Desktop | Change password of the account
     And The user clicks "Giriş Yap" buttonn
     And The user clicks "Hesabım" button
     And The user clicks "Şifre Değiştir" button
-    And The user verifies redirected to "/account/change-password" page
+    And The user verifies redirected to "/tr-TR/account/change-password" page
 
   Scenario: Change password of the current customer
 

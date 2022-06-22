@@ -10,7 +10,7 @@ Feature: Desktop | Login with valid and invalid credentials
     And The user enters valid credentials
     And The user clicks "Giriş Yap" buttonn
     When The user clicks "Hesabım" button
-    And The user verifies redirected to "/account/info" page
+    And The user verifies redirected to "/tr-TR/account/info" page
     And The user checks "Musa", "Çalışkan", "musainveon@gmail.com" and "0507 500 29 20" informations
     And The user clicks "Çıkış Yap" button
     And The user verifies redirected to "/tr-TR" page
