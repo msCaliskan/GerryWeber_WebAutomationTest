@@ -13,7 +13,7 @@ Feature: Desktop | Add to basket
   And The user chooses color and size
   And The user clicks "SEPETE EKLE" button
   And The user clicks "Sepete Git" button
-  And The user verifies redirected to "/basket" page
+  And The user verifies redirected to "/tr-TR/basket" page
   When The user clicks "Sonraki Adım" button
   And The user verifies redirected to "/tr-TR/checkout/payment" page
   When The user enters valid informations
@@ -31,4 +31,4 @@ Feature: Desktop | Add to basket
   And The user clicks "Sil" button
   And The user verifies "Kayıtlı adresiniz bulunmamaktadır." message
   Then The user clicks "Çıkış Yap" button
-  And The user verifies redirected to "/tr-TR" page
+#  And The user verifies redirected to "/tr-TR" page

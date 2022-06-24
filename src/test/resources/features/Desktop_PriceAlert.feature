@@ -21,4 +21,4 @@ Feature: Desktop | Price Alert
     And The user remove product
     And The user verifies "Fiyat alarmınız bulunmamaktadır." message
     Then The user clicks "Çıkış Yap" button
-    And The user verifies redirected to "/tr-TR" page
+#    And The user verifies redirected to "/tr-TR" page
