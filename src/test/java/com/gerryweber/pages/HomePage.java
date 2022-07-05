@@ -25,7 +25,6 @@ public class HomePage extends BasePage{
 
         JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
         WebElement accept = (WebElement) jse.executeScript("return document.querySelector('#usercentrics-root').shadowRoot.querySelector('#focus-lock-id > div.sc-furwcr.kbclTA > div > div.sc-bYoBSM.egarKh > div > div > div.sc-dlVxhl.bEDIID > div > button:nth-child(3)')");
-
        BrowserUtils.clickWithJS(accept);
        BrowserUtils.waitFor(1);
        close_Loc.click();

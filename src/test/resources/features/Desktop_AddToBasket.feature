@@ -31,4 +31,4 @@ Feature: Desktop | Add to basket
   And The user clicks "Sil" button
   And The user verifies "Kayıtlı adresiniz bulunmamaktadır." message
   Then The user clicks "Çıkış Yap" button
-#  And The user verifies redirected to "/tr-TR" page
+  And The user verifies redirected to "/tr-TR?logout=true" page

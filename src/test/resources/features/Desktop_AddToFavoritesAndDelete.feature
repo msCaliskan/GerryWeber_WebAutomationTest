@@ -19,4 +19,4 @@ Feature: Desktop | Add to favorites and delete
     When The user clicks "Listeden Çıkar" button
     And The user verifies " Favori listenizde ürün bulunmamaktadır." message
     Then The user clicks "Çıkış Yap" button
-#    And The user verifies redirected to "/tr-TR" page
+    And The user verifies redirected to "/tr-TR?logout=true" page
