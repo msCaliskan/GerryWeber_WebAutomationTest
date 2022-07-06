@@ -27,7 +27,7 @@ public class CheckoutPage extends BasePage{
 
     public void invalidCard(){
         kartNo_Loc.sendKeys("4444444444444444");
-        adSoyad_Loc.sendKeys("Musa Caliskan");
+        adSoyad_Loc.sendKeys("Test Test");
 
         BrowserUtils.waitFor(1);
 
