@@ -48,6 +48,7 @@ public class HomePage extends BasePage {
         String expectedUrl = "https://www.gerryweber.com.tr/tr-TR";
         String actualUrl = Driver.get().getCurrentUrl();
         Assert.assertEquals(expectedUrl, actualUrl);
+        BrowserUtils.waitFor(2);
     }
 
     public void searchBox(String string) {

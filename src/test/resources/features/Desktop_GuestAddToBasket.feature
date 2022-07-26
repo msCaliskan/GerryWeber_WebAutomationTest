@@ -4,8 +4,8 @@ Feature: Desktop | Guest add to basket
   Scenario:Guest add to basket and delete product from basket
     Given The user visits GerryWeber homepage
     And The user verifies redirected to homepage
-    And The user navigates to "GİYİM" "Resmi Elbise" category
-    When The user verifies redirected to "/tr-TR/giyim-elbiseler-resmi-elbise" page
+    And The user clicks "GİYİM" button
+    When The user verifies redirected to "/tr-TR/giyim" page
     And The user clicks anyone product
     And The user chooses color and size
     And The user clicks "SEPETE EKLE" button
