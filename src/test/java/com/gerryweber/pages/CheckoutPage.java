@@ -14,7 +14,7 @@ public class CheckoutPage extends BasePage{
 
     @FindBy(xpath = "(//*[@id='ccexpmonth'])[2]") public WebElement sktAy_Loc;
 
-    @FindBy(xpath = "//*[contains(@class, 'MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root')]") public List<WebElement> dataList_Loc;
+    @FindBy(xpath = "//*[contains(@class, 'MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters')]") public List<WebElement> dataList_Loc;
 
     @FindBy(xpath = "(//*[@id='ccexpyear'])[2]") public WebElement sktYil_Loc;
 

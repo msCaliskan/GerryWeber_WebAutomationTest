@@ -28,15 +28,11 @@ public class AccountPage extends BasePage{
 
     @FindBy(css = "#title") public WebElement adresBasligi_Loc;
 
-    @FindBy(css = "#countryId") public WebElement ulke_Loc;
-
     @FindBy(css = "#cityId") public WebElement sehir_Loc;
 
     @FindBy(css = "#countyId") public WebElement ilce_Loc;
 
-    @FindBy(xpath = "//*[contains(@class, 'MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root')]") public List<WebElement> dataList_Loc;
-
-    @FindBy(xpath = "//*[contains(@class, 'MuiMenuItem-root MuiMenuItem-gutters MuiButtonBase-root')]") public WebElement ulke_Loc2;
+    @FindBy(xpath = "//*[contains(@class, 'MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters')]") public List<WebElement> dataList_Loc;
 
     @FindBy(css = "#zipPostalCode") public WebElement postaKodu_Loc;
 

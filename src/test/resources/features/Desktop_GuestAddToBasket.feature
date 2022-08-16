@@ -25,3 +25,5 @@ Feature: Desktop | Guest add to basket
     And The user clicks Cart button
     And The user clicks "Sil" button
     Then The user verifies "Alışveriş sepetiniz boş!" message
+
+

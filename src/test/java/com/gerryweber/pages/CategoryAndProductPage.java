@@ -15,9 +15,9 @@ public class CategoryAndProductPage extends BasePage {
 
     @FindBy(xpath = "//*[contains(@class,'MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-4 MuiGrid-grid-md-4')]") public List<WebElement> prodList_Loc;
 
-    @FindBy(xpath = "//button[contains(@class, 'MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root has-stock')]") public List<WebElement> sizeList_Loc;
+    @FindBy(xpath = "//button[contains(@class, 'MuiButton-textSizeMedium MuiButton-disableElevation has-stock')]") public List<WebElement> sizeList_Loc;
 
-    @FindBy(xpath = "//*[@class='MuiTypography-root jss140 MuiTypography-body1']") public List<WebElement> productName_Loc;
+    @FindBy(xpath = "//*[contains(@id, 'productName')]") public List<WebElement> productName_Loc;
 
     @FindBy(xpath = "(//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium muirtl-1x0t2pd'])[2]") public WebElement uyari_Loc;
 
@@ -69,7 +69,7 @@ public class CategoryAndProductPage extends BasePage {
         BrowserUtils.waitFor(2);
     }
     public void validPrice(){
-        String price = priceHolder_Loc.getAttribute("value");
+       String price = priceHolder_Loc.getAttribute("value");
 
         int b = Integer.parseInt(price);
         int c= b-5;
