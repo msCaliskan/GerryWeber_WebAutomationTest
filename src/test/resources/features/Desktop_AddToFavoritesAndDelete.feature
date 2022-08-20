@@ -1,5 +1,5 @@
 Feature: Desktop | Add to favorites and delete
-  @smoke1
+  @wip
   Scenario: The user can add to favorites and delete
 
     Given The user visits GerryWeber homepage

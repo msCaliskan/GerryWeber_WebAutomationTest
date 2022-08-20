@@ -1,5 +1,5 @@
 Feature: Desktop | Price Alert
-  @smoke1
+  @wip
   Scenario: The user can select to PriceAlert and delete
 
     Given The user visits GerryWeber homepage

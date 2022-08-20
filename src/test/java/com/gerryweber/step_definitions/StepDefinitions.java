@@ -12,7 +12,6 @@ public class StepDefinitions {
     @Given("The user visits GerryWeber homepage")
     public void the_user_visits_GerryWeber_homepage() {
         new HomePage().gotoHomePage();
-        BrowserUtils.waitFor(1);
     }
 
     @And("The user verifies redirected to homepage")
