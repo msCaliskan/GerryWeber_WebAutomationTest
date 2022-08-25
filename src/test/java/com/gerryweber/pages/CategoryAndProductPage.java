@@ -54,9 +54,7 @@ public class CategoryAndProductPage extends BasePage {
         for (int i = 0; i < productName_Loc.size(); i++) {
              allNames.get(i).contains(string);
         }
-        String a = Driver.get().findElement(By.xpath("(//*[@class='MuiTypography-root MuiTypography-body3 muirtl-1e5a1xf'])[2]")).getText();
-        a=a.replace(" TL","");
-        System.out.println("a = " + a);
+
 
     }
     public void closePopUps(){
