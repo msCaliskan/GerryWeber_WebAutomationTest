@@ -1,5 +1,5 @@
 Feature: Desktop | Price Alert
-  @wip
+  @smoke
   Scenario: The user can select to PriceAlert and delete
 
     Given The user visits GerryWeber homepage
@@ -23,4 +23,3 @@ Feature: Desktop | Price Alert
     Then The user clicks "Çıkış Yap" button
     And The user verifies redirected to "/tr-TR?logout=true" page
 
-    # Web görünümde Listeden çıkar butonu olmadığı için beklemeye alınmıştır. Mail atıldı

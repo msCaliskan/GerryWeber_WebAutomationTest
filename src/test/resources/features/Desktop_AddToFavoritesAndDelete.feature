@@ -1,5 +1,5 @@
 Feature: Desktop | Add to favorites and delete
-  @wip
+  @smoke
   Scenario: The user can add to favorites and delete
 
     Given The user visits GerryWeber homepage
@@ -21,5 +21,4 @@ Feature: Desktop | Add to favorites and delete
     Then The user clicks "Çıkış Yap" button
     And The user verifies redirected to "/tr-TR?logout=true" page
 
-# Web görünümde Listeden çıkar butonu olmadığı için beklemeye alınmıştır. Mail atıldı
 
