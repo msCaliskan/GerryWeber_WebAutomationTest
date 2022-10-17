@@ -10,6 +10,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
 
+    @FindBy(xpath = "//*[@classname='sp-fancybox-iframe sp-fancybox-skin sp-fancybox-iframe-199']") public WebElement frame_Loc;
+
+    @FindBy(xpath = "//*[@class='fa fa-times element-close-button']") public WebElement popUp_Loc;
+
     @FindBy(css = "#email")
     public WebElement email_Loc;
 
@@ -28,7 +32,8 @@ public class HomePage extends BasePage {
         WebElement accept = (WebElement) jse.executeScript("return document.querySelector('#usercentrics-root').shadowRoot.querySelector('#focus-lock-id > div.sc-furwcr.kbclTA > div > div.sc-bYoBSM.egarKh > div > div > div.sc-dlVxhl.bEDIID > div > button:nth-child(3)')");
         BrowserUtils.clickWithJS(accept);
         BrowserUtils.waitFor(1);
-
+        Driver.get().switchTo().frame(frame_Loc);
+        popUp_Loc.click();
     }
 
     public void login() {
