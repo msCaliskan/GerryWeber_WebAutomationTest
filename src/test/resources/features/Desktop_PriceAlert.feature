@@ -6,10 +6,10 @@ Feature: Desktop | Price Alert
     And The user verifies redirected to homepage
     And The user clicks "Giriş Yap" button
     When The user enters valid credentials
-    And The user clicks "Giriş Yap" buttonn
+    And The user clicks "Giriş Yap" buttonnn
     And The user navigates to "GİYİM" "Business Elbiseler" category
     When The user verifies redirected to "/tr-TR/giyim-elbiseler-business-elbiseler" page
-    And The user clicks anyone product
+    And The user clicks any product
     Then The user clicks "Fiyatı Düşünce Haber Ver" button
     And The user enters valid price
     Then The user clicks "Kaydet" button

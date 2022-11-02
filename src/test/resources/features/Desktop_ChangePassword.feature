@@ -7,7 +7,7 @@ Feature: Desktop | Change password of the account
     And The user verifies redirected to homepage
     And The user clicks "Giriş Yap" button
     And The user enters valid credentials
-    And The user clicks "Giriş Yap" buttonn
+    And The user clicks "Giriş Yap" buttonnn
     And The user clicks "Hesabım" button
     And The user clicks "Şifre Değiştir" button
     And The user verifies redirected to "/tr-TR/account/change-password" page

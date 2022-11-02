@@ -7,7 +7,7 @@ Feature: Desktop | The user adds new address and delete
     And The user verifies redirected to homepage
     And The user clicks "Giriş Yap" button
     When The user enters valid credentials
-    And The user clicks "Giriş Yap" buttonn
+    And The user clicks "Giriş Yap" buttonnn
     And The user clicks "Hesabım" button
     Then The user clicks "Adreslerim" button
     And The user verifies redirected to "/tr-TR/account/addresses" page

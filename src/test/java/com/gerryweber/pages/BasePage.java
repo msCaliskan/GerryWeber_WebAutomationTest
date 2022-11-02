@@ -37,6 +37,12 @@ public abstract class BasePage {
     BrowserUtils.waitFor(2);
     }
     public static void clickButton2(String button){
+        String button_Loc = "(//*[text()='"+button+"'])[2]";
+        BrowserUtils.waitForClickablility(Driver.get().findElement(By.xpath(button_Loc)),5);
+        Driver.get().findElement(By.xpath(button_Loc)).click();
+        BrowserUtils.waitFor(1);
+    }
+    public static void clickButton3(String button){
         String button_Loc = "(//*[text()='"+button+"'])[3]";
         BrowserUtils.waitForClickablility(Driver.get().findElement(By.xpath(button_Loc)),5);
         Driver.get().findElement(By.xpath(button_Loc)).click();

@@ -6,11 +6,11 @@ Feature: Desktop | Add to basket
   And The user verifies redirected to homepage
   And The user clicks "Giriş Yap" button
   When The user enters valid credentials
-  And The user clicks "Giriş Yap" buttonn
+  And The user clicks "Giriş Yap" buttonnn
   And The user navigates to "GİYİM" "Casual Elbiseler" category
   When The user verifies redirected to "/tr-TR/giyim-elbiseler-casual-elbiseler" page
-  And The user clicks anyone product
-  And The user chooses color and size
+  And The user clicks any product
+  And The user chooses size
   And The user clicks "SEPETE EKLE" button
   And The user clicks "Sepete Git" button
   And The user verifies redirected to "/tr-TR/basket" page

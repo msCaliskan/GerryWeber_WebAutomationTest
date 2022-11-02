@@ -6,8 +6,8 @@ Feature: Desktop | Guest add to basket
     And The user verifies redirected to homepage
     And The user clicks "GİYİM" button
     When The user verifies redirected to "/tr-TR/giyim" page
-    And The user clicks anyone product
-    And The user chooses color and size
+    And The user clicks any product
+    And The user chooses size
     And The user clicks "SEPETE EKLE" button
     And The user clicks "Sepete Git" button
     And The user verifies redirected to "/tr-TR/basket" page
