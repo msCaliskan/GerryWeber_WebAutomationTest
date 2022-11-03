@@ -1,7 +1,7 @@
 Feature: Desktop | Multi Language
 
   @smoke
-  Scenario: User checks categorie names and header names and login
+  Scenario: User checks category names and header names and login
 
     Given The user visits GerryWeber homepage
     And The user verifies redirected to homepage

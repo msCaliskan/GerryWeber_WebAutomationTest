@@ -26,16 +26,15 @@ public class HomePage extends BasePage {
         BrowserUtils.waitFor(5);
 
         JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
-        WebElement accept = (WebElement) jse.executeScript("return document.querySelector('#usercentrics-root').shadowRoot.querySelector('#focus-lock-id > div.sc-furwcr.kbclTA > div > div.sc-bYoBSM.egarKh > div > div > div.sc-dlVxhl.bEDIID > div > button:nth-child(3)')");
+        WebElement accept = (WebElement) jse.executeScript("return document.querySelector('#usercentrics-root').shadowRoot.querySelector('#focus-lock-id > div.sc-furwcr.kbclTA > div > div.sc-jJoQJp.dTzACB > div > div > div.sc-bBHxTw.hgPqkm > div > button:nth-child(3)')");
         BrowserUtils.clickWithJS(accept);
         BrowserUtils.waitFor(1);
     }
 
-    public static void checkHomePage() {
-        String expectedUrl = "https://www.gerryweber.com.tr/tr-TR";
-        String actualUrl = Driver.get().getCurrentUrl();
-        Assert.assertEquals(expectedUrl, actualUrl);
-        BrowserUtils.waitFor(2);
+    public static void checkHomePage(){
+        String expectedTitle ="GERRY WEBER";
+        String actualTitle = Driver.get().getTitle();
+        Assert.assertEquals(expectedTitle,actualTitle);
     }
 
     public void searchBox(String string) {
