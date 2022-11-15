@@ -74,8 +74,9 @@ public abstract class BasePage {
         try {
             BrowserUtils.waitForPresenceOfElement(By.xpath(moduleLocator), 5);
             BrowserUtils.waitForVisibility(By.xpath(moduleLocator), 5);
+            BrowserUtils.waitFor(1);
             BrowserUtils.scrollToElement(Driver.get().findElement(By.xpath(moduleLocator)));
-            Driver.get().findElement(By.xpath(moduleLocator)).click();
+            BrowserUtils.clickWithJS(Driver.get().findElement(By.xpath(moduleLocator)));
             BrowserUtils.waitFor(2);
         } catch (Exception e) {
             BrowserUtils.clickWithTimeOut(Driver.get().findElement(By.xpath(moduleLocator)),  5);
