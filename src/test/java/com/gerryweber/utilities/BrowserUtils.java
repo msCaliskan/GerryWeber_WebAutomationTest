@@ -21,6 +21,8 @@ public class BrowserUtils {
         actions.moveToElement(element).perform();
     }
 
+
+
     /**
      * Performs a pause
      *
