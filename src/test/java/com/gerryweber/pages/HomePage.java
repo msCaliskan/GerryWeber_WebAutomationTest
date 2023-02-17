@@ -37,7 +37,6 @@ public class HomePage extends BasePage {
     public void gotoHomePage() {
         Driver.get().get(ConfigurationReader.get("url"));
         BrowserUtils.waitFor(5);
-
         JavascriptExecutor jse = (JavascriptExecutor) Driver.get();
         WebElement accept = (WebElement) jse.executeScript("return document.querySelector('#usercentrics-root').shadowRoot.querySelector('#focus-lock-id > div.sc-kDvujY.cRCOkl > div > div.sc-cCjUiG.gHlwwJ > div > div > div.sc-lllmON.fjvxqY > div > button:nth-child(3)')");
         BrowserUtils.clickWithJS(accept);
